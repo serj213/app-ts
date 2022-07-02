@@ -1,0 +1,61 @@
+.basketCart {
+    display: flex;
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    &__img {
+        flex: 0 0 25%;
+        margin-right: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        flex: 0 0 62%;
+
+        h4 {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+
+    &__info {
+        flex: 0 0 15%;
+        padding-top: 30px;
+    }
+
+    &__infoTop {
+        display: flex;
+        margin-bottom: 30px;
+        * {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    &__infoBottom {
+        button {
+            font-size: 20px;
+            color: #fff;
+            background-color: darkRed;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

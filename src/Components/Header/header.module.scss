@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background-color: #ccc;
+    height: 90px;
+    padding: 0 15px;
+    border-radius: 5px;
+
+    a {
+        color: #000;
+        text-decoration: none;
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
